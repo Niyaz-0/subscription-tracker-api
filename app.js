@@ -11,7 +11,8 @@ import cookieParser from 'cookie-parser';
 
 const app = express();
 
-app.use(express.json());
+//converts the incoming data into Javascript objects
+app.use(express.json()); 
 app.use(express.urlencoded( { extended: false}));
 app.use(cookieParser());
 
