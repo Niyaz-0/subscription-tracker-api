@@ -10,7 +10,7 @@ const arcjetMiddleware =  async (req, res, next) => {
 
             return res.status(403).json({ error: 'Access denied' });
         }
-        next()
+        next();
 
     } catch (error) {
         console.log(`Arcjet Middleware Error: ${error}`);
